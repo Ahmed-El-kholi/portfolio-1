@@ -114,7 +114,7 @@ nav ul li a i{
 
 .hero{
     height: 100vh;
-    background-image: url('/images/scroll-effects2.jpg');
+    background-image: url('images/scroll-effects2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
