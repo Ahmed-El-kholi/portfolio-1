@@ -87,8 +87,6 @@ nav > ul > li .line{
 nav > ul > li:hover .line{
     width: 90%;
 }
-
-
 nav ul li a{
     display: block;
     margin-right: 15px;
@@ -125,7 +123,6 @@ nav ul li a i{
     bottom: 90px;
     left: 90px;
     color: #fff;
-
 }
 .hero-container h1{
     font-weight: 800;
@@ -203,7 +200,6 @@ nav ul li a i{
 {
     opacity: 1;
      right: 8%;
-
 }
 
 /* **********************************************start Aboutus ********************/
@@ -269,7 +265,6 @@ nav ul li a i{
     position: relative;
     color: #555;
     font-size: 20px;
-    /* margin: 0 20px; */
 }
 /* .about_us-title i::before{
     content: "";
@@ -293,7 +288,6 @@ nav ul li a i{
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
     width: 95%;
-
 }
 .about_us .left-content p{
     color: #666;
@@ -380,7 +374,6 @@ nav ul li a i{
 .portfolio img{
     width: 100%;
     border-radius: 5px;
-
 }
 .caption h3{
     color: #555;
@@ -391,12 +384,10 @@ nav ul li a i{
     font-size: 13px;
     margin-bottom: 15px;
 }
-
 .img-con{
     width: 100%;
     position: relative;
 }
-
 .img-con .overlay{
     position: absolute;
     width: 100%;
@@ -410,7 +401,6 @@ nav ul li a i{
     border-bottom-left-radius:5px ;
     border-bottom-right-radius:5px ;
 }
-
 .img-con .overlay i{
 color: #fff;
 font-size: 25px;
@@ -422,7 +412,6 @@ transform: translate(-50%,-50%);
 
 .img-con:hover .overlay{
     opacity: 1;
-
 }
 /*******************************  Start Team *******************************/
 .team{
@@ -447,7 +436,6 @@ transform: translate(-50%,-50%);
     border-bottom: #72B626 solid 3px;
     cursor: pointer;
     overflow: hidden;
-
 }
 .team-item > .team-image img{
     width: 100%;
@@ -513,10 +501,7 @@ transform: translate(-50%,-50%);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: 0 0 18px;
-
-
 }
-
 .team-caption h3{
     padding: 35px 0 25px; 
        font-weight: 700;
@@ -613,9 +598,6 @@ transform: translate(-50%,-50%);
     color: #fff;
     transition: all .2s ease-in;
 }
-/* .newsletter .des-news button:hover{
-  
-} */
 .newsletter .icon-inside i{
     position: absolute;
     left: 0;
@@ -629,10 +611,6 @@ transform: translate(-50%,-50%);
     height: 55px;
     line-height: 1.5;
     font-size: 20px;
-
-}
-.newsletter .des-news button i{
-
 }
 .newsletter .des-news button:hover i,
 .contact button:hover i{
@@ -718,13 +696,12 @@ transform: translate(-50%,-50%);
 
 
 .contact{
-    background-image: url(/images/contactform-bg.jpg);
+    background-image: url(images/contactform-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .contact .content{
     text-align: center;
-
 }
 .contact form{
     max-width: 750px;
@@ -741,8 +718,7 @@ transform: translate(-50%,-50%);
 }
 .contact .content textarea:focus{
     border: none;
-    outline: none;
-
+    outline: none
 }
 .contact .content textarea::placeholder{
     font-size: 20px;
@@ -751,8 +727,6 @@ transform: translate(-50%,-50%);
 .contact .content h1{
     font-size: 48px;
     font-weight: 800;
-    
-
 }
 .h4-contact{
     color:#fff;
@@ -776,8 +750,6 @@ transform: translate(-50%,-50%);
     position: relative;
     width: 49%;
     display: inline-block;
-
-
 }
 .contact .cont-user i,
 .contact .cont-pass i,
@@ -800,7 +772,6 @@ transform: translate(-50%,-50%);
 }
 .contact button{
     width: 40%;
-
 }
 /* ************************ Start Footer ************************/
 .footer{
@@ -835,10 +806,4 @@ transform: translate(-50%,-50%);
 .footer-icon a:hover{
     color: #fff;
     background-color: #72b626;
-
 }
-
-
-/* ########### hegazy */
-
-
