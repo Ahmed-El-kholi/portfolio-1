@@ -112,7 +112,7 @@ nav ul li a i{
 
 .hero{
     height: 100vh;
-    background-image: url("./images/scroll-effects2.jpg");
+    background-image: url('./images/scroll-effects2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -540,7 +540,7 @@ transform: translate(-50%,-50%);
 
 .newsletter{
     color: #fff;
-    background: url("images/news.jpg");
+    background: url('../images/news.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
