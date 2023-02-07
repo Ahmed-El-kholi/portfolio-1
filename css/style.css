@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;600&family=Fraunces:opsz,wght@9..144,500&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.active{
+    color: #72B626 !important;
+}
+.active + .line{
+    width: 90%;
+}
+.active-button-port{
+    background-color: #72B626 !important;
+    color: #fff !important;
+}
+.custom-button {
+    border: none;
+    color: #fff;
+    background-color: #72B626;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    letter-spacing: 0;
+    transition: all 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 14px 33px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.custom-form-group{
+    margin: 20px 0;
+}
+/*************************************************** Start Header *************************/
+header{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    height: 60px;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #efe8e8;
+    z-index: 100;
+    text-align: center;
+}
+nav{
+    width: 90%;
+    padding: 15px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ div nav img{
+    float: left;
+    width: 150px;
+}
+nav > ul{
+    float: right;
+}
+nav > ul > li{
+    display: inline-block;
+}
+
+nav > ul > li{
+    display: inline-block;
+    position: relative;
+}
+nav > ul > li .line{
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    height: 2px;
+    background-color: #72B626;
+    display: block;
+    width: 0px;
+    transition: .5s;
+}
+nav > ul > li:hover .line{
+    width: 90%;
+}
+
+
+nav ul li a{
+    display: block;
+    margin-right: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 600;
+    transition: all .3s;
+}
+nav ul li a:hover{
+    color:#72B626 ;
+}
+
+nav ul li a i{
+    margin: 0 7px;
+
+}
+.clear{
+    clear: both;
+}
+
+/********************************************** Start Hero *********************************/
+
+.hero{
+    height: 100vh;
+    background-image: url(/images/scroll-effects2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-container{
+    position:absolute;
+    bottom: 90px;
+    left: 90px;
+    color: #fff;
+
+}
+.hero-container h1{
+    font-weight: 800;
+    font-size: 90px;
+    padding: 8px 0;
+    text-transform: uppercase;
+
+}
+.hero-container p{
+    display: inline-block;
+    color: #eee;
+    font-size: 15px;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.hero-container button,
+.about_us .left-content button
+{
+    padding: 12px 26px;
+    color: #fff;
+    margin-left: 7px;
+    background-color: rgb(114, 182, 38);
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    transition: all .3s;
+}
+
+.hero-container button,
+.about_us .left-content button,
+.newsletter .des-news button,
+.contact button{
+    position: relative;
+    /* transform: scale(1.1) translate(3%,-29%); */
+}
+
+.hero-container button span,
+.about_us .left-content button span,
+.newsletter .des-news button span,
+.contact button span{
+    display: block;
+    background-color: rgb(114, 182, 38);
+    position: relative;
+    /* z-index: 3; */
+    transition: .3s;
+}
+
+.hero-container button:hover span,
+.about_us .left-content button:hover span,
+.newsletter .des-news button:hover span,
+.contact button:hover span{
+  transform: translateX(-5%);
+}
+
+.hero-container button i,
+.about_us .left-content button i,
+.newsletter .des-news button i,
+.contact button i{
+    /* margin-left: 5px ; */
+    transition: all .5s;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.hero-container button:hover i,
+.about_us .left-content button:hover i
+{
+    opacity: 1;
+     right: 8%;
+
+}
+
+/* **********************************************start Aboutus ********************/
+.about_us .container,
+.services .container,
+.portfolio .container,
+.team .container,
+.Blog .container,
+.contact .container,
+.footer .container{
+    width: 85%;
+    padding: 70px 15px 100px;
+    margin: auto;
+} 
+/* .about_us-content{
+    margin: 0 64px;
+} */
+.about_us-title,
+.services-title,
+.portfolio-title,
+.team-title,
+.blog-title{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.about_us-title h2,
+.services-title h2,
+.portfolio-title h2,
+.team-title h2,
+.blog-title h2{
+    margin: 15px 0;
+    font-size: 48px;
+    font-weight: 800;
+}
+.about_us-title p,
+.services-title p,
+.portfolio-title p,
+.team-title p,
+.blog-title p{
+    color: #555;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+
+}
+.h2-about,
+.h2-srvices-our,
+.h2-team-our{
+    color: #72B626;
+}
+.h2-us,
+.h2-services,
+.h2-team{
+    color: #555;
+}
+.about_us-title i,
+.services-title i,
+.portfolio-title i,
+.team-title i,
+.blog-title i{
+    position: relative;
+    color: #555;
+    font-size: 20px;
+    /* margin: 0 20px; */
+}
+/* .about_us-title i::before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    color: #000;
+    position: absolute;
+} */
+.about_us .left-content{
+    width: 47%;
+    float: left;
+}
+.left-content h3{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+}
+.about_us .left-content hr{
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: 95%;
+
+}
+.about_us .left-content p{
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.about_us .left-content a{
+    display: inline-block;
+    margin: 15px 10px 25px;
+}
+.right-content{
+    float: right;
+    width: 50%;
+}
+.right-content img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+/*********************************** start services *****************************/
+.services{
+    background-color: #EFEFEF;
+}
+.all-item{
+    float: left;
+    background-color: #fff;
+    width:calc(94% / 3);
+    color: #555;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 7px;
+    margin:1%;
+}
+.all-item i{
+    font-size: 40px;
+    color: #72B626;
+}
+.all-item h2{
+    color: #72B626;
+    margin-top: 20px;
+}
+.all-item p{
+    margin: 20px 0;
+}
+.all-item a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.all-item a{
+    color: #72B626;
+}
+/****************************** start portfolio *****************************/
+.title-btn{
+    margin: 35px 0 30px 0;
+}
+.portfolio-title button{
+    color: #000000;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #72B626;
+    padding: 8px 30px;
+    margin-right: 10px;
+    border-radius: 40px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.portfolio-title button:hover,
+.portfolio-title button:hover i{
+    background-color: #72B626;
+    color: #fff;
+}
+.portfolio-title button > i{
+    color: #000000;
+    font-size: 14px;
+    margin-right: 2px;
+    margin-left: 0;
+}
+.portfolio-item1{
+    width: calc(94% / 3);
+    float: left;
+    text-align: start;
+    margin: 1%;
+}
+.portfolio img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.caption h3{
+    color: #555;
+    margin: 20px 0 8px;
+}
+.caption p{
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.img-con{
+    width: 100%;
+    position: relative;
+}
+
+.img-con .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a3;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+.img-con .overlay i{
+color: #fff;
+font-size: 25px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.img-con:hover .overlay{
+    opacity: 1;
+
+}
+/*******************************  Start Team *******************************/
+.team{
+    background-color: #EFEFEF;
+}
+.item-1:hover .team-caption,
+.item-2:hover .team-caption,
+.item-3:hover .team-caption,
+.item-4:hover .team-caption{
+    background-color: #72B626;
+    color: #fff ;
+}
+.team-item{
+    width: calc(92% / 4);
+    float: left;
+    margin: 1%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.team-image{
+    position: relative;
+    border-bottom: #72B626 solid 3px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.team-item > .team-image img{
+    width: 100%;
+    height: 364px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.team-icon{
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    transition: .3s;
+    background-color: #141414a3;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    padding-left: 25%;
+}
+.team-icon a{
+    display: inline-block;
+   border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+    transition: all .3s;
+}
+.team-icon a:hover{
+    background-color: #fff;
+}
+.team-icon a:hover i{
+  color: #72B626;
+}
+
+.team-item:hover .team-icon{
+    bottom: 0;
+}
+/* .team-image::after{
+    position: absolute;
+    background-color: rgb(0, 0, 0,.5);
+    border-radius: 7px;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: .3s all ease;
+}
+.team-image:hover::after {
+    height: 100%;
+    visibility: visible;
+
+} */
+.team-caption{
+    text-align: center;
+    background-color: #fff;
+    /* border-top: #72B626 solid 3px; */
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0 0 18px;
+
+
+}
+
+.team-caption h3{
+    padding: 35px 0 25px; 
+       font-weight: 700;
+    font-size: 18px;
+    color: #555;
+}
+.team-item:hover h3{
+    color: #fff;
+}
+.team-caption span{
+    padding: 0px 0 18px;
+    font-style: italic;
+}
+.icon-title{
+    position: relative;
+}
+.icon-title::after,
+.icon-title::before{
+    position: absolute;
+    content: '';
+    width: 240px;
+    height: 1px;
+    background-color: rgba(35, 35, 35, 0.066);
+    top: 50%;
+}
+.icon-title::after{
+
+    left: 27%;
+}
+.icon-title::before{
+  
+    right: 27%;
+}
+
+/**********************************Start Newsletter *****************************/
+
+.newsletter{
+    color: #fff;
+    background: url(/images/news.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+}
+.newsletter .overlay,
+.contact .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 90px 0;
+}
+.newsletter .overlay .content{
+    width: 85%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter h1{
+    font-weight: 800;
+
+}
+.newsletter .des-news{
+    width: 720px;
+    margin: auto;
+    
+}
+.icon-inside{
+    position: relative;
+}
+.newsletter .des-news input,
+.contact input{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    padding-left: 65px;
+    border-radius:1px 40px 40px 1px;
+    margin-bottom: 30px;
+    color: #aaa;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.newsletter .des-news button{
+    margin: 0 auto;
+    display: block;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    width: 260px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color:#72B626;
+    color: #fff;
+    transition: all .2s ease-in;
+}
+/* .newsletter .des-news button:hover{
+  
+} */
+.newsletter .icon-inside i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 10px;
+    color: #ffffff;
+    background-color:#72B626;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    width: 52px;
+    height: 55px;
+    line-height: 1.5;
+    font-size: 20px;
+
+}
+.newsletter .des-news button i{
+
+}
+.newsletter .des-news button:hover i,
+.contact button:hover i{
+    opacity: 1;
+    right: 17%;
+}
+
+/* ************************** Start Blog *************************8*/
+.blog-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.blog-item1{
+    width: calc(94% / 3);
+    float: left;
+    margin-right: 1%;
+}
+.blog-img{
+    position: relative;
+}
+.title-month{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #72B626;
+    color: white;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 4px;
+}
+.title-month .data-1{
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 1px;
+     margin-bottom: 3px;
+
+}
+.title-month .data-2{
+    font-size: 12px;
+}
+.blog-img img{
+    width:100%;
+    border-radius: 4px;
+
+}
+.blog-des h4{
+    font-size: 18px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+}
+.blog-des > h4 > a{
+    color: #555;
+    transition: .1s;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.blog-des > h4 > a:hover{
+    color: #72B626;
+}
+.blog-des p{
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    color: #666;
+}
+.blog-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* **************************** Start Contact***********************/
+
+
+.contact{
+    background-image: url(/images/contactform-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact .content{
+    text-align: center;
+
+}
+.contact form{
+    max-width: 750px;
+    margin: auto;
+}
+.contact .content textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 0 0 25px;
+    color: #aaa;
+    border-radius: 30px;
+    height: 158px;
+
+}
+.contact .content textarea:focus{
+    border: none;
+    outline: none;
+
+}
+.contact .content textarea::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact .content h1{
+    font-size: 48px;
+    font-weight: 800;
+    
+
+}
+.h4-contact{
+    color:#fff;
+}
+.contact .content h4{ 
+    color: #fff;
+   margin: 15px 0 25px;
+   font-weight: 400;
+   font-size: 18px;
+    line-height: 18px;
+}
+.contact input{
+    width: 90%;
+    position: relative;
+    height: 50px;
+
+}
+.contact .cont-user,
+.contact .cont-pass,
+.contact .cont-email{
+    position: relative;
+    width: 49%;
+    display: inline-block;
+
+
+}
+.contact .cont-user i,
+.contact .cont-pass i,
+.contact .cont-email i{
+    background-color: #72B626;
+    color: #fff;
+    width: 52px;
+    height: 50px;
+    position: absolute;
+    left: -5px;
+    padding: 14px;
+    top: 20px;
+    border-radius: 40px 1px 1px 40px;
+    z-index: 1;
+}
+.contact textarea + input{
+    width: 50%;
+    display: inline-block;
+    margin-right: 30px;
+}
+.contact button{
+    width: 40%;
+
+}
+/* ************************ Start Footer ************************/
+.footer{
+    background-color: #000000;
+    color: #fff;
+}
+.footer .content{
+    text-align: center;
+
+}
+.footer p{
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.footer span{
+    color: #72B626;
+}
+.footer-icon a{
+    color: #72B626;
+    border-radius: 50%;
+    border: 2px solid #72b626;
+    margin-right: 15px;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    line-height: 40px;
+    display: inline-block;
+    transition: all .2s ease-in;
+}
+.footer-icon a:hover{
+    color: #fff;
+    background-color: #72b626;
+
+}
+
+
+/* ########### hegazy */
+
+
